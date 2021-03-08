@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=*, initial-scale=1.0">
+    <title>form</title>
+    <link href='styles.css' rel='stylesheet' />
+</head>
+
+<body>
+    <div id="BOX">
+        <form action="p2.html" onsubmit="return verif()">
+            <legend>REMPLIR LA FORMULAIRE</legend>
+            <div class="Block">
+                <div class="LBL"> <label>Nom:</label>
+                </div>
+                <input type="text" id="name" onblur="Minus()">
+                <span id="ms1" class="Alert"></span>
+            </div>
+            <div class="Block">
+                <div class="LBL"><label>Server:</label></div>
+                <select id="slc" onchange="imgSelect()">
+                    <option>choisir</option>
+                    <option value="gnet.tn">gnet.tn</option>
+                    <option value="gmail.com">gmail.com</option>
+                </select>
+                <div class="img-mail">
+                    <img src="https://www.clcv.org/storage/app/uploads/public/c84/c69/b03/thumb__800_0_0_0_crop.jpg"
+                        alt="" id="img-mail">
+                </div>
+                <span id="ms2" class="Alert"></span>
+            </div>
+            <div class="Block">
+                <div class="LBL"> <label>Mail:</label>
+                </div>
+                <input type="email" id="email" onfocus="fill()">
+                <span id="ms3" class="Alert"></span>
+            </div>
+            <div class="Block">
+                <div class="LBL"> <label>Password:</label>
+                </div>
+
+                <input type="password" id="pw" onkeyup="verifPW()">
+                <span id="ms4" class="Alert"></span>
+            </div>
+            <div class="Block">
+                <div class="LBL"> <label>Confirm Password:</label>
+                </div>
+
+                <input type="password" id="pwc">
+                <span id="ms5" class="Alert"></span>
+            </div>
+            <div class="Block">
+                <div class="LBL">
+                    <label>Sexe:</label>
+                </div>
+                <label>Female</label>
+                <input type="radio" name="GEN" id="rd1">
+                <label>Male</label>
+                <input type="radio" name="GEN" id="rd2">
+                <span id="ms6" class="Alert"></span>
+            </div>
+            <div class="Block img">
+                <div class="button" onclick="prev()">
+                    prev </div>
+                <img src="img/1.png" id="imgslider">
+                <div class="button" onclick="next()">next</div>
+            </div>
+            <div>
+                <input type="checkbox" id="cb">
+                <label>J'accept Tout les termes et les conditions de ce site.</label>
+                <span id="ms7" class="Alert"></span>
+            </div>
+            <div class="bt">
+                <input type="submit" value="Envoyer">
+                <input type="reset" value="Retablir">
+            </div>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
