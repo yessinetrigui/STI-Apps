@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>app 2</title>
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <center>
+        <form action="ps.html" onsubmit="return pass()">
+            <label>pseudo</label>
+            <input type="text" id="ps">
+            <br>
+            <label>server</label>
+            <select id="server">
+                <option>choisir</option>
+                <option value="gmail.com">gmail.com</option>
+                <option value="gnet.tn">gnet.tn</option>
+                <option value="hotmail.com">hotmail.com</option>
+            </select>
+            <br>
+            <label>e-mail</label>
+            <input type="email" id="mail" onfocus="mailremp()">
+            <br>
+            <label>mot de pass</label>
+            <input type="text" id="pw">
+            <br>
+            <label>confirmer mot de pass</label>
+            <input type="text" id="pwc">
+            <br><br>
+            <input type="submit" value="Envoyer">
+            <input type="reset" value="Retablir">
+
+        </form>
+    </center>
+</body>
+
+</html>
